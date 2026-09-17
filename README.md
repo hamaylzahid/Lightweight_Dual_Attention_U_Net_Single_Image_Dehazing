@@ -195,8 +195,6 @@ See `requirements.txt` for the Python dependencies.
 
 <h2 align="center">Limitations<br></h2>
 
-**Naming.** The project is titled Edge-Aware Lightweight Dual Attention U-Net, but the implemented architecture does not include a separate edge-extraction branch or an edge-specific auxiliary loss term. Attention here operates through channel and spatial recalibration at the bottleneck only. Noted here for architectural transparency.
-
 **Checkpoint selection.** The best checkpoint is selected by lowest training L1 loss, not validation PSNR/SSIM. Validation-driven selection is a natural next step.
 
 **Single-dataset evaluation.** Primary quantitative results are on the RESIDE-6K test split. Cross-dataset evaluation (e.g. NH-HAZE) would give a stronger measure of generalization to real-world haze.
@@ -212,17 +210,6 @@ See `requirements.txt` for the Python dependencies.
 - Failure-case analysis on the densest-haze samples
 
 ---
-
-<h2 align="center">Citation<br></h2>
-
-```bibtex
-@software{zahid_dual_attention_unet_dehazing,
-  author  = {Hamayl Zahid},
-  title   = {Edge-Aware Lightweight Dual Attention U-Net for Image Dehazing},
-  year    = {2026},
-  url     = {https://github.com/hamaylzahid/Edge-Aware-Lightweight-Dual-Attention-UNet}
-}
-```
 
 <h2 align="center">License<br></h2>
 
@@ -249,8 +236,17 @@ See `requirements.txt` for pinned versions.
 <h2 align="center">Author<br></h2>
 
 <p align="center">
-<strong>Hamayl Zahid</strong><br>
-GitHub: <a href="https://github.com/hamaylzahid">https://github.com/hamaylzahid</a><br>
-LinkedIn: <a href="https://www.linkedin.com/in/hamaylzahid/">https://www.linkedin.com/in/hamaylzahid/</a><br>
-Portfolio: <a href="https://hamaylzahid.github.io/hamaylzahid/">https://hamaylzahid.github.io/hamaylzahid/</a>
+  <strong>Hamayl Zahid</strong>
+</p>
+
+<p align="center">
+  <a href="https://github.com/hamaylzahid">
+    <img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white" alt="GitHub">
+  </a>
+  <a href="https://www.linkedin.com/in/hamaylzahid/">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?logo=linkedin&logoColor=white" alt="LinkedIn">
+  </a>
+  <a href="https://hamaylzahid.github.io/hamaylzahid/">
+    <img src="https://img.shields.io/badge/Portfolio-000000?logo=googlechrome&logoColor=white" alt="Portfolio">
+  </a>
 </p>
